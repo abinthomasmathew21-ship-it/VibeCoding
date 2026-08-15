@@ -105,12 +105,12 @@ export const OverviewHero: React.FC<OverviewHeroProps> = ({
           <div className="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
             <Users2 className="w-5 h-5" />
           </div>
-          <h3 className="font-bold text-slate-100 text-base">2. Team Structure (2–4)</h3>
+          <h3 className="font-bold text-slate-100 text-base">2. Challenge Task Sprint</h3>
           <p className="text-xs text-slate-400 leading-relaxed">
-            Divide clear responsibilities: Problem Analysis, UI/UX Design, Development, AI-assisted Dev, Testing & Debugging, and Final Presentation.
+            Execute in focused phases: Problem Analysis, UI/UX Design, Development, AI-assisted Scaffolding, Testing, and Final 5-Point Demo.
           </p>
           <div className="text-[11px] text-purple-300 font-mono flex items-center gap-1">
-            <CheckCircle2 className="w-3.5 h-3.5" /> Equal active contribution
+            <CheckCircle2 className="w-3.5 h-3.5" /> Tasks 1 to 4 Roadmap
           </div>
         </div>
 

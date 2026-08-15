@@ -340,7 +340,7 @@ export const INITIAL_TASKS: TaskItem[] = [
     id: "m1",
     phase: "morning_plan",
     title: "1. Understand the Assigned Problem",
-    description: "Discuss within your team (2-4 members) to pinpoint the exact problem scope and target user persona.",
+    description: "Discuss within your team to pinpoint the exact problem scope and target user persona.",
     completed: false,
   },
   {
@@ -397,7 +397,7 @@ export const INITIAL_TASKS: TaskItem[] = [
   {
     id: "a4",
     phase: "afternoon_demo",
-    title: "9. Final Submission Verification",
+    title: "9. Final Demonstration Readiness",
     description: "Ensure repo link, working demo, project summary, and AI tool explanation are ready for CCF Lab judges.",
     completed: false,
   },

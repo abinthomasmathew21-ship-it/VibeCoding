@@ -1,17 +1,8 @@
 export type ChallengeCategory = "Finance & Arrangements" | "Campus Problems" | "Real-World Problems";
 
-export interface TeamMember {
-  id: string;
-  name: string;
-  year: "1st Year" | "2nd Year";
-  role: "Problem Analysis" | "UI/UX Design" | "Development" | "AI-Assisted Dev" | "Testing & Debugging" | "Presentation";
-  avatarColor: string;
-}
-
 export interface TeamProfile {
   teamName: string;
   teamNumber?: string;
-  members: TeamMember[];
   selectedCategory: ChallengeCategory;
   projectTitle: string;
   tagline: string;
@@ -52,7 +43,6 @@ export interface TaskItem {
   title: string;
   description: string;
   completed: boolean;
-  assignedTo?: string;
 }
 
 export interface VibeRuleItem {

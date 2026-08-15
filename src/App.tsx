@@ -6,12 +6,11 @@ import { CategoriesExplorer } from "./components/CategoriesExplorer";
 import { TeamWorkspace } from "./components/TeamWorkspace";
 import { EvaluationRubric } from "./components/EvaluationRubric";
 import { RulesAndInstructions } from "./components/RulesAndInstructions";
-import { SubmissionPackager } from "./components/SubmissionPackager";
 import { PitchTimerModal } from "./components/PitchTimerModal";
 import { AiMentorModal } from "./components/AiMentorModal";
 import { ProblemPreset, TaskItem, TeamProfile } from "./types";
 import { INITIAL_TASKS, PRESET_PROBLEMS, EVENT_DETAILS } from "./data/challengeData";
-import { Sparkles, Timer, FileCheck2, ArrowUp } from "lucide-react";
+import { Sparkles, Timer } from "lucide-react";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("overview");
@@ -30,36 +29,6 @@ export default function App() {
     return {
       teamName: "CCF Innovators",
       teamNumber: "T-01",
-      members: [
-        {
-          id: "m-1",
-          name: "Alex Rivera",
-          year: "2nd Year",
-          role: "Problem Analysis",
-          avatarColor: "from-blue-500 to-indigo-600",
-        },
-        {
-          id: "m-2",
-          name: "Priya Sharma",
-          year: "2nd Year",
-          role: "UI/UX Design",
-          avatarColor: "from-purple-500 to-pink-600",
-        },
-        {
-          id: "m-3",
-          name: "Kevin Chen",
-          year: "1st Year",
-          role: "Development",
-          avatarColor: "from-emerald-500 to-teal-600",
-        },
-        {
-          id: "m-4",
-          name: "Ananya Das",
-          year: "1st Year",
-          role: "AI-Assisted Dev",
-          avatarColor: "from-amber-500 to-orange-600",
-        },
-      ],
       selectedCategory: defaultPreset.category,
       projectTitle: defaultPreset.title,
       tagline: "Making campus labs friction-free with real-time seat availability",
@@ -174,14 +143,6 @@ export default function App() {
         )}
 
         {activeTab === "rules" && <RulesAndInstructions />}
-
-        {activeTab === "submit" && (
-          <SubmissionPackager
-            teamProfile={teamProfile}
-            setTeamProfile={setTeamProfile}
-            onOpenPitchTimer={() => setShowPitchTimer(true)}
-          />
-        )}
       </main>
 
       {/* Footer */}

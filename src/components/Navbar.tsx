@@ -6,12 +6,11 @@ import {
   Clock,
   Sparkles,
   Timer,
-  FileCheck2,
   LayoutDashboard,
-  Users,
-  CheckSquare,
   Award,
   Layers,
+  ListTodo,
+  CheckSquare,
 } from "lucide-react";
 import { EVENT_DETAILS } from "../data/challengeData";
 
@@ -64,10 +63,9 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: "overview", label: "Overview & Schedule", icon: LayoutDashboard },
     { id: "workflow", label: "6-Step Vibe Workflow", icon: Layers },
     { id: "categories", label: "Problem Categories", icon: Code2 },
-    { id: "team", label: "Team & Tasks", icon: Users },
+    { id: "team", label: "Task Sprint", icon: ListTodo },
     { id: "rubric", label: "Evaluation Rubric", icon: Award },
     { id: "rules", label: "Rules & Guidelines", icon: CheckSquare },
-    { id: "submit", label: "Final Submission", icon: FileCheck2 },
   ];
 
   return (
