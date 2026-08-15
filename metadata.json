@@ -1,0 +1,6 @@
+{
+  "name": "Vibe Coding Challenge 2026",
+  "description": "Official Hackathon Hub, Team Workspace & AI Copilot for the Vibe Coding Challenge 2026 at CCF Lab.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
